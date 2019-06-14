@@ -14,7 +14,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class rightscreen extends AppCompatActivity {
+public class rightscreen extends AppCompatActivity{
 
     Button r1,r2,r3,r4,end2;
     TextView button_disp3;
@@ -33,6 +33,7 @@ public class rightscreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 button_disp3.setText("PRESS 2");
+                Log.d(TAG, "Action Bar on Right : Clicked Button 1");
             }
         });
 
@@ -41,6 +42,7 @@ public class rightscreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 button_disp3.setText("PRESS 3");
+                Log.d(TAG, "Action Bar on Right : Clicked Button 2");
             }
         });
 
@@ -49,6 +51,7 @@ public class rightscreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 button_disp3.setText("PRESS 4");
+                Log.d(TAG, "Action Bar on Right : Clicked Button 3");
             }
         });
 
@@ -57,6 +60,7 @@ public class rightscreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 button_disp3.setText("END");
+                Log.d(TAG, "Action Bar on Right : Clicked Button 4");
             }
         });
 
@@ -66,7 +70,9 @@ public class rightscreen extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent3 = new Intent(rightscreen.this,MainActivity.class);
                 startActivity(intent3);
+                Log.d(TAG, "Action Bar on Right : Clicked Button END");
             }
         });
     }
+
 }
