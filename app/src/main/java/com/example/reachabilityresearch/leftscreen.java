@@ -14,22 +14,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class leftscreen extends AppCompatActivity implements SensorEventListener {
+public class leftscreen extends AppCompatActivity {
 
     Button l1,l2,l3,l4,end1;
     TextView button_disp2;
     private static final String TAG = "Activity";
-    private SensorManager sensorManager;
-    Sensor accelerometer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_leftscreen);
 
         Log.d(TAG, "OnCreate : Initializing Sensor Services");
-        sensorManager =(SensorManager) getSystemService(Context.SENSOR_SERVICE);
-        accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
-        sensorManager.registerListener( leftscreen.this,accelerometer,SensorManager.SENSOR_DELAY_NORMAL);
         Log.d(TAG,"onCreate : Registered accelerometerListener for Action Bar on Left");
 
         button_disp2=(TextView) findViewById(R.id.button_disp2);
@@ -74,14 +69,5 @@ public class leftscreen extends AppCompatActivity implements SensorEventListener
                 finish();
             }
         });
-    }
-    @Override
-    public void onAccuracyChanged(Sensor sensor, int i) {
-
-    }
-
-    @Override
-    public void onSensorChanged(SensorEvent sensorEvent) {
-        Log.d(TAG, "onSensorChanged : X: "+sensorEvent.values[0]+" Y: "+sensorEvent.values[1]+" Z: "+sensorEvent.values[2]);
     }
 }
