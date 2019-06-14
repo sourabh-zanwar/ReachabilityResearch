@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ReachabilityResearch</string>
+    <string name="start">START</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_4">4</string>
+    <string name="_3">3</string>
+    <string name="next">Next</string>
+    <string name="press_1">PRESS 1</string>
+    <string name="please_select_your_dominant_hand">Please select your dominant hand</string>
+    <string name="right">Right</string>
+    <string name="left">Left</string>
+    <string name="end">End</string>
+    <string name="press_2">PRESS 2</string>
+</resources>
