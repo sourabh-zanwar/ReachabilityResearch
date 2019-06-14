@@ -38,6 +38,7 @@ public class screen1 extends AppCompatActivity implements SensorEventListener{
             @Override
             public void onClick(View view) {
                 button_disp1.setText("PRESS 2");
+                Log.d(TAG, "Action Bar on Top : Clicked Button 1");
             }
         });
 
@@ -46,6 +47,7 @@ public class screen1 extends AppCompatActivity implements SensorEventListener{
             @Override
             public void onClick(View view) {
                 button_disp1.setText("PRESS 3");
+                Log.d(TAG, "Action Bar on Top : Clicked Button 2");
             }
         });
 
@@ -54,6 +56,7 @@ public class screen1 extends AppCompatActivity implements SensorEventListener{
             @Override
             public void onClick(View view) {
                 button_disp1.setText("PRESS 4");
+                Log.d(TAG, "Action Bar on Top : Clicked Button 3");
             }
         });
 
@@ -62,6 +65,7 @@ public class screen1 extends AppCompatActivity implements SensorEventListener{
             @Override
             public void onClick(View view) {
                 button_disp1.setText("NEXT");
+                Log.d(TAG, "Action Bar on Top : Clicked Button 4");
             }
         });
 
@@ -71,6 +75,7 @@ public class screen1 extends AppCompatActivity implements SensorEventListener{
             public void onClick(View view) {
                 Intent intent2 = new Intent(screen1.this,handedness.class);
                 startActivity(intent2);
+                Log.d(TAG, "Action Bar on Top : Clicked Button NEXT");
                 finish();
             }
         });
