@@ -23,8 +23,8 @@ public class handedness extends AppCompatActivity {
         left.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent3 = new Intent(handedness.this,leftscreen.class);
-                Log.d(TAG, "Choose Strong Hand : Clicked Button LEFT");
+                Intent intent3 = new Intent(handedness.this,screen1.class);
+                Log.d(TAG, "Clicked : LEFT");
                 startActivity(intent3);
             }
         });
@@ -32,8 +32,8 @@ public class handedness extends AppCompatActivity {
         right.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent4 = new Intent(handedness.this,rightscreen.class);
-                Log.d(TAG, "Choose Strong Hand : Clicked Button 1");
+                Intent intent4 = new Intent(handedness.this,screen1.class);
+                Log.d(TAG, "Clicked : RIGHT");
                 startActivity(intent4);
             }
         });

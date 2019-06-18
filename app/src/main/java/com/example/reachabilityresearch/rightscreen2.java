@@ -16,7 +16,7 @@ import android.widget.TextView;
 
 import java.util.Calendar;
 
-public class rightscreen extends AppCompatActivity implements SensorEventListener{
+public class rightscreen2 extends AppCompatActivity implements SensorEventListener {
 
     Button r1,r2,r3,r4,r5,r6,end2;
     TextView button_disp3;
@@ -32,7 +32,7 @@ public class rightscreen extends AppCompatActivity implements SensorEventListene
         Log.d(TAG, "OnCreate : Initializing Sensor Services");
         sensorManager =(SensorManager) getSystemService(Context.SENSOR_SERVICE);
         accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
-        sensorManager.registerListener( rightscreen.this,accelerometer,SensorManager.SENSOR_DELAY_NORMAL);
+        sensorManager.registerListener( rightscreen2.this,accelerometer,SensorManager.SENSOR_DELAY_NORMAL);
         Calendar calendar = Calendar.getInstance();
         String time = "\nTimestamp : "+calendar.getTime();
         Log.d(TAG,"onCreate : Registered accelerometerListener for ActionBar on Right"+time);
@@ -108,9 +108,9 @@ public class rightscreen extends AppCompatActivity implements SensorEventListene
         end2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent3 = new Intent(rightscreen.this,leftscreen1.class);
-                startActivity(intent3);
-                Log.d(TAG, "Action Bar on Right : Clicked Button Next");
+                Intent intent32 = new Intent(rightscreen2.this,screen3.class);
+                startActivity(intent32);
+                Log.d(TAG, "Action Bar on Right : Clicked Button NEXT");
             }
         });
     }

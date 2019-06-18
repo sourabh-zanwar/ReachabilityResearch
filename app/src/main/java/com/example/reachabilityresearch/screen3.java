@@ -16,7 +16,7 @@ import android.widget.TextView;
 
 import java.util.Calendar;
 
-public class screen1 extends AppCompatActivity implements SensorEventListener{
+public class screen3 extends AppCompatActivity implements SensorEventListener {
 
     Button c1,c2,c3,c4,next;
     TextView button_disp1;
@@ -32,7 +32,7 @@ public class screen1 extends AppCompatActivity implements SensorEventListener{
         Log.d(TAG, "OnCreate : Initializing Sensor Services");
         sensorManager =(SensorManager) getSystemService(Context.SENSOR_SERVICE);
         accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
-        sensorManager.registerListener( screen1.this,accelerometer,SensorManager.SENSOR_DELAY_NORMAL);
+        sensorManager.registerListener( screen3.this,accelerometer,SensorManager.SENSOR_DELAY_NORMAL);
         Calendar calendar = Calendar.getInstance();
         String time = "\nTimestamp : "+calendar.getTime();
         Log.d(TAG,"onCreate : Registered accelerometerListener for Action Bar on Top"+time);
@@ -86,7 +86,7 @@ public class screen1 extends AppCompatActivity implements SensorEventListener{
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent2 = new Intent(screen1.this,leftscreen.class);
+                Intent intent2 = new Intent(screen3.this,leftscreen2.class);
                 startActivity(intent2);
                 Log.d(TAG, "Action Bar on Top : Clicked Button NEXT");
             }
@@ -99,8 +99,8 @@ public class screen1 extends AppCompatActivity implements SensorEventListener{
 
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
-         xco = sensorEvent.values[0];
-         yco = sensorEvent.values[1];
-         zco = sensorEvent.values[2];
+        xco = sensorEvent.values[0];
+        yco = sensorEvent.values[1];
+        zco = sensorEvent.values[2];
     }
 }
