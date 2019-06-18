@@ -33,6 +33,7 @@ public class leftscreen extends AppCompatActivity{
             @Override
             public void onClick(View view) {
                 button_disp2.setText("PRESS 2");
+                Log.d(TAG, "Action Bar on Left : Clicked Button 1");
             }
         });
 
@@ -41,6 +42,7 @@ public class leftscreen extends AppCompatActivity{
             @Override
             public void onClick(View view) {
                 button_disp2.setText("PRESS 3");
+                Log.d(TAG, "Action Bar on Left : Clicked Button 2");
             }
         });
 
@@ -49,6 +51,7 @@ public class leftscreen extends AppCompatActivity{
             @Override
             public void onClick(View view) {
                 button_disp2.setText("PRESS 4");
+                Log.d(TAG, "Action Bar on Left : Clicked Button 3");
             }
         });
 
@@ -57,6 +60,7 @@ public class leftscreen extends AppCompatActivity{
             @Override
             public void onClick(View view) {
                 button_disp2.setText("END");
+                Log.d(TAG, "Action Bar on Left : Clicked Button 4");
             }
         });
 
@@ -66,6 +70,7 @@ public class leftscreen extends AppCompatActivity{
             public void onClick(View view) {
                 Intent intent2 = new Intent(leftscreen.this,MainActivity.class);
                 startActivity(intent2);
+                Log.d(TAG, "Action Bar on Left : Clicked Button END");
                 finish();
             }
         });
