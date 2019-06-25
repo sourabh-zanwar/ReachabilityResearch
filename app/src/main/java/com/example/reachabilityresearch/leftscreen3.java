@@ -47,7 +47,7 @@ public class leftscreen3 extends AppCompatActivity implements SensorEventListene
                 button_disp2.setText("PRESS 5");
                 Calendar calendar1 = Calendar.getInstance();
                 String time1 = "\nTimestamp : "+calendar1.getTime();
-                Log.d(TAG, "OnLeft4 : Clicked 2\nAccelerometer Data :\nX :"+xco+" Y : "+yco+" Z : "+zco+time1);
+                Log.d(TAG, "OnLeft4 : Clicked 2 Accelerometer Data : X :"+xco+" Y : "+yco+" Z : "+zco+time1);
                 Log.d(TAG,"\nOnLeft4 : Expected 5");
             }
         });
@@ -59,7 +59,7 @@ public class leftscreen3 extends AppCompatActivity implements SensorEventListene
                 button_disp2.setText("PRESS 1");
                 Calendar calendar2 = Calendar.getInstance();
                 String time2 = "\nTimestamp : "+calendar2.getTime();
-                Log.d(TAG, "OnLeft4 : Clicked 5\nAccelerometer Data :\nX :"+xco+" Y : "+yco+" Z : "+zco+time2);
+                Log.d(TAG, "OnLeft4 : Clicked 5 Accelerometer Data : X :"+xco+" Y : "+yco+" Z : "+zco+time2);
                 Log.d(TAG,"\nOnLeft4 : Expected 1");
             }
         });
@@ -71,7 +71,7 @@ public class leftscreen3 extends AppCompatActivity implements SensorEventListene
                 button_disp2.setText("PRESS 3");
                 Calendar calendar3 = Calendar.getInstance();
                 String time3 = "\nTimestamp : "+calendar3.getTime();
-                Log.d(TAG, "OnLeft4 : Clicked 1\nAccelerometer Data :\nX :"+xco+" Y : "+yco+" Z : "+zco+time3);
+                Log.d(TAG, "OnLeft4 : Clicked 1 Accelerometer Data : X :"+xco+" Y : "+yco+" Z : "+zco+time3);
                 Log.d(TAG,"\nOnLeft4 Dominant Hand : Expected 3");
             }
         });
@@ -83,7 +83,7 @@ public class leftscreen3 extends AppCompatActivity implements SensorEventListene
                 button_disp2.setText("PRESS 4");
                 Calendar calendar4 = Calendar.getInstance();
                 String time4 = "\nTimestamp : "+calendar4.getTime();
-                Log.d(TAG, "OnLeft4 : Clicked 3\nAccelerometer Data :\nX :"+xco+" Y : "+yco+" Z : "+zco+time4);
+                Log.d(TAG, "OnLeft4 : Clicked 3 Accelerometer Data : X :"+xco+" Y : "+yco+" Z : "+zco+time4);
                 Log.d(TAG,"\nOnLeft4 : Expected 4");
             }
         });
@@ -95,7 +95,7 @@ public class leftscreen3 extends AppCompatActivity implements SensorEventListene
                 button_disp2.setText("PRESS 6");
                 Calendar calendar5 = Calendar.getInstance();
                 String time4 = "\nTimestamp : "+calendar5.getTime();
-                Log.d(TAG, "OnLeft4 : Clicked 4\nAccelerometer Data :\nX :"+xco+" Y : "+yco+" Z : "+zco+time4);
+                Log.d(TAG, "OnLeft4 : Clicked 4 Accelerometer Data : X :"+xco+" Y : "+yco+" Z : "+zco+time4);
                 Log.d(TAG,"\nOnLeft4 : Expected 6");
             }
         });
@@ -108,7 +108,7 @@ public class leftscreen3 extends AppCompatActivity implements SensorEventListene
                 button_disp2.setText("PRESS NEXT");
                 Calendar calendar6 = Calendar.getInstance();
                 String time4 = "\nTimestamp : "+calendar6.getTime();
-                Log.d(TAG, "OnLeft4 : Clicked 6\nAccelerometer Data :\nX :"+xco+" Y : "+yco+" Z : "+zco+time4);
+                Log.d(TAG, "OnLeft4 : Clicked 6 Accelerometer Data : X :"+xco+" Y : "+yco+" Z : "+zco+time4);
             }
         });
 
