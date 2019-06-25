@@ -14,4 +14,9 @@
     <string name="press_2">PRESS 2</string>
     <string name="_5">5</string>
     <string name="_6">6</string>
+    <string name="use_dominant_hand">Use Dominant Hand</string>
+    <string name="use_non_dominant_hand">Use Non-dominant Hand</string>
+    <string name="press_4">PRESS 4</string>
+    <string name="press_3">PRESS 3</string>
+    <string name="press_5">PRESS 5</string>
 </resources>

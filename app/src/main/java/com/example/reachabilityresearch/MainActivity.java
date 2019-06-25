@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
         start_main.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent1 = new Intent(MainActivity.this,handedness.class);
-                startActivity(intent1);
+                Intent intenta = new Intent(MainActivity.this,handedness.class);
+                startActivity(intenta);
                 Log.d(TAG, "Initialize : Clicked Button START");
                 finish();
             }

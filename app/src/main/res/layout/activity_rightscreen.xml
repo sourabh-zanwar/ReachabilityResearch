@@ -62,12 +62,12 @@
         android:id="@+id/end2"
         android:layout_width="150dp"
         android:layout_height="163dp"
-        android:layout_marginStart="64dp"
         android:layout_marginTop="16dp"
         android:text="@string/next"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button_disp3"
+        app:layout_constraintStart_toStartOf="@+id/button_disp3"
         app:layout_constraintTop_toBottomOf="@+id/button_disp3" />
 
     <TextView
@@ -78,7 +78,7 @@
         android:layout_marginTop="64dp"
         android:layout_marginBottom="16dp"
         android:background="#002C7061"
-        android:text="@string/press_1"
+        android:text="@string/press_2"
         android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/end2"
         app:layout_constraintStart_toStartOf="parent"
@@ -109,5 +109,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/r5" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/use_dominant_hand"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/button_disp3"
+        app:layout_constraintStart_toStartOf="@+id/button_disp3"
+        app:layout_constraintTop_toBottomOf="@+id/button_disp3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
