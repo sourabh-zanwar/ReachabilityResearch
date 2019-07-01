@@ -37,7 +37,7 @@ public class rightscreen2 extends AppCompatActivity implements SensorEventListen
         accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         sensorManager.registerListener( rightscreen2.this,accelerometer,SensorManager.SENSOR_DELAY_NORMAL);
         Calendar calendar = Calendar.getInstance();
-        String time = "\nTimestamp : "+calendar.getTime();
+        String time = "\nTimestamp : "+calendar.getTimeInMillis();
         Log.d(TAG,"onCreate : Registered accelerometerListener for ActionBar on Right"+time);
         Log.d(TAG,"\nOnRight3 : Expected 5");
         r1=(Button) findViewById(R.id.r5);
@@ -46,8 +46,8 @@ public class rightscreen2 extends AppCompatActivity implements SensorEventListen
             public void onClick(View view) {
                 button_disp3.setText("PRESS 3");
                 Calendar calendar1 = Calendar.getInstance();
-                String time1 = "\nTimestamp : "+calendar1.getTime();
-                Log.d(TAG, "OnRight3 : Clicked 5 Accelerometer Data : X :"+xco+" Y : "+yco+" Z : "+zco+time1);
+                String time1 = "\nTimestamp : "+calendar1.getTimeInMillis();
+                Log.d(TAG, "OnRight3 : Clicked 5 Accelerometer Data : X : "+xco+" Y : "+yco+" Z : "+zco+time1);
                 Log.d(TAG,"\nOnRight3 : Expected 3");
             }
         });
@@ -58,8 +58,8 @@ public class rightscreen2 extends AppCompatActivity implements SensorEventListen
             public void onClick(View view) {
                 button_disp3.setText("PRESS 1");
                 Calendar calendar2 = Calendar.getInstance();
-                String time2 = "\nTimestamp : "+calendar2.getTime();
-                Log.d(TAG, "OnRight3 : Clicked 3 Accelerometer Data : X :"+xco+" Y : "+yco+" Z : "+zco+time2);
+                String time2 = "\nTimestamp : "+calendar2.getTimeInMillis();
+                Log.d(TAG, "OnRight3 : Clicked 3 Accelerometer Data : X : "+xco+" Y : "+yco+" Z : "+zco+time2);
                 Log.d(TAG,"\nOnRight3 : Expected 1");
             }
         });
@@ -70,8 +70,8 @@ public class rightscreen2 extends AppCompatActivity implements SensorEventListen
             public void onClick(View view) {
                 button_disp3.setText("PRESS 6");
                 Calendar calendar3 = Calendar.getInstance();
-                String time3 = "\nTimestamp : "+calendar3.getTime();
-                Log.d(TAG, "OnRight3 : Clicked 1 Accelerometer Data : X :"+xco+" Y : "+yco+" Z : "+zco+time3);
+                String time3 = "\nTimestamp : "+calendar3.getTimeInMillis();
+                Log.d(TAG, "OnRight3 : Clicked 1 Accelerometer Data : X : "+xco+" Y : "+yco+" Z : "+zco+time3);
                 Log.d(TAG,"\nOnRight3 : Expected 6");
             }
         });
@@ -82,8 +82,8 @@ public class rightscreen2 extends AppCompatActivity implements SensorEventListen
             public void onClick(View view) {
                 button_disp3.setText("PRESS 2");
                 Calendar calendar4 = Calendar.getInstance();
-                String time4 = "\nTimestamp : "+calendar4.getTime();
-                Log.d(TAG, "OnRight3 : Clicked 6 Accelerometer Data : X :"+xco+" Y : "+yco+" Z : "+zco+time4);
+                String time4 = "\nTimestamp : "+calendar4.getTimeInMillis();
+                Log.d(TAG, "OnRight3 : Clicked 6 Accelerometer Data : X : "+xco+" Y : "+yco+" Z : "+zco+time4);
                 Log.d(TAG,"\nOnRight3 : Expected 2");
             }
         });
@@ -94,8 +94,8 @@ public class rightscreen2 extends AppCompatActivity implements SensorEventListen
             public void onClick(View view) {
                 button_disp3.setText("PRESS 4");
                 Calendar calendar5 = Calendar.getInstance();
-                String time5 = "\nTimestamp : "+calendar5.getTime();
-                Log.d(TAG, "OnRight3 : Clicked 2 Accelerometer Data : X :"+xco+" Y : "+yco+" Z : "+zco+time5);
+                String time5 = "\nTimestamp : "+calendar5.getTimeInMillis();
+                Log.d(TAG, "OnRight3 : Clicked 2 Accelerometer Data : X : "+xco+" Y : "+yco+" Z : "+zco+time5);
                 Log.d(TAG,"\nOnRight3 : Expected 4");
             }
         });
@@ -106,8 +106,8 @@ public class rightscreen2 extends AppCompatActivity implements SensorEventListen
             public void onClick(View view) {
                 button_disp3.setText("PRESS NEXT");
                 Calendar calendar6 = Calendar.getInstance();
-                String time6 = "\nTimestamp : "+calendar6.getTime();
-                Log.d(TAG, "OnRight3 : Clicked 4 Accelerometer Data : X :"+xco+" Y : "+yco+" Z : "+zco+time6);
+                String time6 = "\nTimestamp : "+calendar6.getTimeInMillis();
+                Log.d(TAG, "OnRight3 : Clicked 4 Accelerometer Data : X : "+xco+" Y : "+yco+" Z : "+zco+time6);
             }
         });
 

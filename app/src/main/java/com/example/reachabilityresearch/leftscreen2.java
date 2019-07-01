@@ -18,111 +18,113 @@ import java.util.Calendar;
 
 public class leftscreen2 extends AppCompatActivity implements SensorEventListener {
 
-    Button l1,l2,l3,l4,l5,l6,end1;
-    TextView button_disp2,textView;
-    public float xco,yco,zco;
+    Button l1, l2, l3, l4, l5, l6, end1;
+    TextView button_disp2, textView;
+    public float xco, yco, zco;
     private static final String TAG = "Activity";
     private SensorManager sensorManager;
     Sensor accelerometer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_leftscreen);
         Log.d(TAG, "OnCreate : Initializing Sensor Services");
-        button_disp2=(TextView) findViewById(R.id.button_disp2);
+        button_disp2 = (TextView) findViewById(R.id.button_disp2);
         button_disp2.setText("PRESS 4");
-        textView =(TextView) findViewById(R.id.dominant_hand);
+        textView = (TextView) findViewById(R.id.dominant_hand);
         textView.setText("Use Dominant Hand");
-        sensorManager =(SensorManager) getSystemService(Context.SENSOR_SERVICE);
+        sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
-        sensorManager.registerListener( leftscreen2.this,accelerometer,SensorManager.SENSOR_DELAY_NORMAL);
+        sensorManager.registerListener(leftscreen2.this, accelerometer, SensorManager.SENSOR_DELAY_NORMAL);
         Calendar calendar = Calendar.getInstance();
-        String time = "\nTimestamp : "+calendar.getTime();
-        Log.d(TAG,"onCreate : Registered accelerometerListener for Action Bar on Left."+time);
-        Log.d(TAG,"\nOnLeft3 : Expected 4");
-        l1=(Button) findViewById(R.id.l4);
+        String time = "\nTimestamp : " + calendar.getTimeInMillis();
+        Log.d(TAG, "onCreate : Registered accelerometerListener for Action Bar on Left." + time);
+        Log.d(TAG, "\nOnLeft3 : Expected 4");
+        l1 = (Button) findViewById(R.id.l4);
         l1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 button_disp2.setText("PRESS 1");
                 Calendar calendar1 = Calendar.getInstance();
-                String time1 = "\nTimestamp : "+calendar1.getTime();
-                Log.d(TAG, "OnLeft3 : Clicked 4 Accelerometer Data : X :"+xco+" Y : "+yco+" Z : "+zco+time1);
-                Log.d(TAG,"\nOnLeft3 : Expected 1");
+                String time1 = "\nTimestamp : " + calendar1.getTimeInMillis();
+                Log.d(TAG, "OnLeft3 : Clicked 4 Accelerometer Data : X : " + xco + " Y : " + yco + " Z : " + zco + time1);
+                Log.d(TAG, "\nOnLeft3 : Expected 1");
             }
         });
 
-        l2=(Button) findViewById(R.id.l1);
+        l2 = (Button) findViewById(R.id.l1);
         l2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 button_disp2.setText("PRESS 5");
                 Calendar calendar2 = Calendar.getInstance();
-                String time2 = "\nTimestamp : "+calendar2.getTime();
-                Log.d(TAG, "OnLeft3 : Clicked 1 Accelerometer Data : X :"+xco+" Y : "+yco+" Z : "+zco+time2);
-                Log.d(TAG,"\nOnLeft3 : Expected 5");
+                String time2 = "\nTimestamp : " + calendar2.getTimeInMillis();
+                Log.d(TAG, "OnLeft3 : Clicked 1 Accelerometer Data : X : " + xco + " Y : " + yco + " Z : " + zco + time2);
+                Log.d(TAG, "\nOnLeft3 : Expected 5");
             }
         });
 
-        l3=(Button) findViewById(R.id.l5);
+        l3 = (Button) findViewById(R.id.l5);
         l3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 button_disp2.setText("PRESS 2");
                 Calendar calendar3 = Calendar.getInstance();
-                String time3 = "\nTimestamp : "+calendar3.getTime();
-                Log.d(TAG, "OnLeft3 : Clicked 5 Accelerometer Data : X :"+xco+" Y : "+yco+" Z : "+zco+time3);
-                Log.d(TAG,"\nOnLeft3 Dominant Hand : Expected 3");
+                String time3 = "\nTimestamp : " + calendar3.getTimeInMillis();
+                Log.d(TAG, "OnLeft3 : Clicked 5 Accelerometer Data : X : " + xco + " Y : " + yco + " Z : " + zco + time3);
+                Log.d(TAG, "\nOnLeft3 Dominant Hand : Expected 3");
             }
         });
 
-        l4=(Button) findViewById(R.id.l2);
+        l4 = (Button) findViewById(R.id.l2);
         l4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 button_disp2.setText("PRESS 6");
                 Calendar calendar4 = Calendar.getInstance();
-                String time4 = "\nTimestamp : "+calendar4.getTime();
-                Log.d(TAG, "OnLeft3 : Clicked 2 Accelerometer Data : X :"+xco+" Y : "+yco+" Z : "+zco+time4);
-                Log.d(TAG,"\nOnLeft3 : Expected 6");
+                String time4 = "\nTimestamp : " + calendar4.getTimeInMillis();
+                Log.d(TAG, "OnLeft3 : Clicked 2 Accelerometer Data : X : " + xco + " Y : " + yco + " Z : " + zco + time4);
+                Log.d(TAG, "\nOnLeft3 : Expected 6");
             }
         });
 
-        l5=(Button) findViewById(R.id.l6);
+        l5 = (Button) findViewById(R.id.l6);
         l5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 button_disp2.setText("PRESS 3");
                 Calendar calendar5 = Calendar.getInstance();
-                String time4 = "\nTimestamp : "+calendar5.getTime();
-                Log.d(TAG, "OnLeft3 : Clicked 6 Accelerometer Data : X :"+xco+" Y : "+yco+" Z : "+zco+time4);
-                Log.d(TAG,"\nOnLeft3 : Expected 3");
+                String time4 = "\nTimestamp : " + calendar5.getTimeInMillis();
+                Log.d(TAG, "OnLeft3 : Clicked 6 Accelerometer Data : X : " + xco + " Y : " + yco + " Z : " + zco + time4);
+                Log.d(TAG, "\nOnLeft3 : Expected 3");
             }
         });
 
 
-        l6=(Button) findViewById(R.id.l3);
+        l6 = (Button) findViewById(R.id.l3);
         l6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 button_disp2.setText("PRESS NEXT");
                 Calendar calendar6 = Calendar.getInstance();
-                String time4 = "\nTimestamp : "+calendar6.getTime();
-                Log.d(TAG, "OnLeft3 : Clicked 3 Accelerometer Data : X :"+xco+" Y : "+yco+" Z : "+zco+time4);
+                String time4 = "\nTimestamp : " + calendar6.getTimeInMillis();
+                Log.d(TAG, "OnLeft3 : Clicked 3 Accelerometer Data : X : " + xco + " Y : " + yco + " Z : " + zco + time4);
             }
         });
 
 
-        end1=(Button) findViewById(R.id.end1);
+        end1 = (Button) findViewById(R.id.end1);
         end1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intenti = new Intent(leftscreen2.this,screen.class);
+                Intent intenti = new Intent(leftscreen2.this, screen.class);
                 startActivity(intenti);
                 Log.d(TAG, "OnLeft3 : Clicked NEXT");
             }
         });
     }
+
     @Override
     public void onAccuracyChanged(Sensor sensor, int i) {
 

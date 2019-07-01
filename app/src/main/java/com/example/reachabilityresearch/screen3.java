@@ -37,7 +37,7 @@ public class screen3 extends AppCompatActivity implements SensorEventListener {
         accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         sensorManager.registerListener( screen3.this,accelerometer,SensorManager.SENSOR_DELAY_NORMAL);
         Calendar calendar = Calendar.getInstance();
-        String time = "\nTimestamp : "+calendar.getTime();
+        String time = "\nTimestamp : "+calendar.getTimeInMillis();
         Log.d(TAG,"Screen 3 : onCreate : Registered accelerometerListener for Action Bar on Top"+time);
         Log.d(TAG,"\nOnTop3 : Expected 4");
 
@@ -48,8 +48,8 @@ public class screen3 extends AppCompatActivity implements SensorEventListener {
             public void onClick(View view) {
                 button_disp1.setText("PRESS 2");
                 Calendar calendar1 = Calendar.getInstance();
-                String time1 = "\nTimestamp : "+calendar1.getTime();
-                Log.d(TAG, "OnTop3 : Clicked 4 Accelerometer Data : X :"+xco+" Y : "+yco+" Z : "+zco+time1);
+                String time1 = "\nTimestamp : "+calendar1.getTimeInMillis();
+                Log.d(TAG, "OnTop3 : Clicked 4 Accelerometer Data : X : "+xco+" Y : "+yco+" Z : "+zco+time1);
                 Log.d(TAG,"\nOnTop3 : Expected 2");
             }
         });
@@ -60,8 +60,8 @@ public class screen3 extends AppCompatActivity implements SensorEventListener {
             public void onClick(View view) {
                 button_disp1.setText("PRESS 1");
                 Calendar calendar2 = Calendar.getInstance();
-                String time2 = "\nTimestamp : "+calendar2.getTime();
-                Log.d(TAG, "OnTop3 : Clicked 2 Accelerometer Data : X :"+xco+" Y : "+yco+" Z : "+zco+time2);
+                String time2 = "\nTimestamp : "+calendar2.getTimeInMillis();
+                Log.d(TAG, "OnTop3 : Clicked 2 Accelerometer Data : X : "+xco+" Y : "+yco+" Z : "+zco+time2);
                 Log.d(TAG,"\nOnTop3 : Expected 1");
             }
         });
@@ -72,8 +72,8 @@ public class screen3 extends AppCompatActivity implements SensorEventListener {
             public void onClick(View view) {
                 button_disp1.setText("PRESS 3");
                 Calendar calendar3 = Calendar.getInstance();
-                String time3 = "\nTimestamp : "+calendar3.getTime();
-                Log.d(TAG, "OnTop3 : Clicked 1 nAccelerometer Data : X :"+xco+" Y : "+yco+" Z : "+zco+time3);
+                String time3 = "\nTimestamp : "+calendar3.getTimeInMillis();
+                Log.d(TAG, "OnTop3 : Clicked 1 nAccelerometer Data : X : "+xco+" Y : "+yco+" Z : "+zco+time3);
                 Log.d(TAG,"\nOnTop3 : Expected 3");
             }
         });
@@ -84,8 +84,8 @@ public class screen3 extends AppCompatActivity implements SensorEventListener {
             public void onClick(View view) {
                 button_disp1.setText("PRESS NEXT");
                 Calendar calendar4 = Calendar.getInstance();
-                String time4 = "\nTimestamp : "+calendar4.getTime();
-                Log.d(TAG, "OnTop3 : Clicked 3 Accelerometer Data : X :"+xco+" Y : "+yco+" Z : "+zco+time4);
+                String time4 = "\nTimestamp : "+calendar4.getTimeInMillis();
+                Log.d(TAG, "OnTop3 : Clicked 3 Accelerometer Data : X : "+xco+" Y : "+yco+" Z : "+zco+time4);
             }
         });
 
