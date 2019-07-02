@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".leftscreen">
+    tools:context=".leftscreen4">
 
     <Button
         android:id="@+id/l1"
@@ -120,4 +120,5 @@
         app:layout_constraintEnd_toEndOf="@id/button_disp2"
         app:layout_constraintStart_toStartOf="@id/button_disp2"
         app:layout_constraintTop_toBottomOf="@id/button_disp2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
