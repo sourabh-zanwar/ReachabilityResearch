@@ -10,7 +10,7 @@
         android:id="@+id/c1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="4dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="4dp"
         android:text="@string/_1"
@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="4dp"
         android:text="@string/_2"
         android:textSize="36sp"
         app:layout_constraintEnd_toStartOf="@+id/c3"
@@ -51,10 +51,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="4dp"
         android:text="@string/_4"
         android:textSize="36sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/c5"
         app:layout_constraintStart_toEndOf="@+id/c3"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -96,5 +96,31 @@
         app:layout_constraintEnd_toEndOf="@+id/button_disp1"
         app:layout_constraintStart_toStartOf="@+id/button_disp1"
         app:layout_constraintTop_toBottomOf="@+id/button_disp1" />
+
+    <Button
+        android:id="@+id/c5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/_5"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/c6"
+        app:layout_constraintStart_toEndOf="@+id/c4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/c6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/_6"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/c5"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
