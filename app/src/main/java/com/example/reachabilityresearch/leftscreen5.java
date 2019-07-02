@@ -92,7 +92,7 @@ public class leftscreen5 extends AppCompatActivity implements SensorEventListene
         l5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                button_disp2.setText("PRESS END");
+                button_disp2.setText("PRESS 4");
                 Calendar calendar5 = Calendar.getInstance();
                 String time4 = "\nTimestamp : "+calendar5.getTimeInMillis();
                 Log.d(TAG, "OnLeft6 : Clicked 2 Accelerometer Data : X : "+xco+" Y : "+yco+" Z : "+zco+time4);
